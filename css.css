@@ -1,0 +1,80 @@
+body
+{
+    /*Tira as margens e padding, define a cor de fundo e deixa o display como flex para que então
+    centralize na tela*/
+    margin: 0;
+    padding: 0;   
+    background-color: rgb(15, 19, 22);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cardTitulo
+{
+    /*Define a cor, formato, sombra e tamanho da div e então centraliza na tela
+    */
+    background-color: rgb(18, 9, 97);
+    margin-top: 0px;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 700px;
+    justify-self: center;
+    align-self: center;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.cardTitulo h1
+{   /*Todos os H1 depois do cardTitulo terão um padding e sera zerado a margem e tara o texto centralizado
+    com sua cor sendo branca e definindo a fonte monospace*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-align: center;
+    color: rgb(236, 236, 236);
+    font-family: monospace;
+}
+
+.cardConteudo
+{
+    /*Define o tamanho e a cor da div que envolve o texto*/
+    background-color: rgb(54, 53, 53);
+    width: 700px;
+}
+
+p
+{
+    /*Paragrafos tem sua cor definida, texto alinhado e fonte definida com um padding para baixo*/
+    color: rgb(177, 177, 177);
+    text-align: center;
+    font-family: sans-serif;
+    padding-bottom: 10px;
+}
+
+li
+{
+    /*cada item da lista tem a mesma cor, texto centralizado, definindo a fonte e tirando padding e estilo
+    do item*/
+    color: rgb(177, 177, 177);
+    text-align: center;
+    font-family: sans-serif;
+    list-style: none;
+    padding: 0;
+}
+
+ul
+{
+    /*tirando o padding inicial que é dado pelo ul*/
+    padding: 0;
+}
+
+.listas
+{
+    /*as duas listas criadas são colocadas uma do lado da outra para melhor ocupar o espaço*/
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    gap: 60px;
+}
