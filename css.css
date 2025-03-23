@@ -1,80 +1,195 @@
 body
 {
-    /*Tira as margens e padding, define a cor de fundo e deixa o display como flex para que então
-    centralize na tela*/
+
+    /*Define margem como 0 e depois as margens da esquerda e da direita ganham 200px cada lado para dar o efeito de uma folha A4*/
     margin: 0;
-    padding: 0;   
-    background-color: rgb(15, 19, 22);
+    margin-left: 200px;
+    margin-right: 200px;
+    padding: 0;
+}
+
+.foto
+{
+    /*Deixa a foto aredondada e no centro da pagina com uma margem superior de 20 px de tamanho*/
+    border-radius: 100px;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.cardTitulo
-{
-    /*Define a cor, formato, sombra e tamanho da div e então centraliza na tela
-    */
-    background-color: rgb(18, 9, 97);
-    margin-top: 0px;
-    margin-bottom: 20px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
-    width: 700px;
     justify-self: center;
-    align-self: center;
-    border-bottom-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    margin-top: 20px;
 }
 
-.cardTitulo h1
-{   /*Todos os H1 depois do cardTitulo terão um padding e sera zerado a margem e tara o texto centralizado
-    com sua cor sendo branca e definindo a fonte monospace*/
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 0;
-    text-align: center;
-    color: rgb(236, 236, 236);
-    font-family: monospace;
-}
-
-.cardConteudo
+h3
 {
-    /*Define o tamanho e a cor da div que envolve o texto*/
-    background-color: rgb(54, 53, 53);
-    width: 700px;
+    /*de todos os h3 remove as margens e paddins e deixa os alinhados no centro com um sob linha e a sob linha tem uma distancia de 5 px da
+    palavra com um padding superior de 2px e inferior de 10px*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    text-decoration: underline;
+    text-underline-offset: 5px; 
+    padding-top: 2px;
+    padding-bottom: 10px;
 }
 
 p
-{
-    /*Paragrafos tem sua cor definida, texto alinhado e fonte definida com um padding para baixo*/
-    color: rgb(177, 177, 177);
+{   /*Todos os paragrafos ficam alinhados no centro com um padding a direita e a esquerda de 50px*/
     text-align: center;
-    font-family: sans-serif;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+h1
+{
+    /*Todos os h1 ficam alinhados no centro com uma margem 0 e um padding superior de 10px*/
+    text-align: center;
+    margin: 0;
+    padding-top: 10px;
+}
+
+h4
+{
+    /*Todos os h4 ficam centralizados com uma margem de 0 e um padding inferior de 10 px*/
+    text-align: center;
+    margin: 0;
     padding-bottom: 10px;
 }
 
-li
+.title
 {
-    /*cada item da lista tem a mesma cor, texto centralizado, definindo a fonte e tirando padding e estilo
-    do item*/
-    color: rgb(177, 177, 177);
-    text-align: center;
-    font-family: sans-serif;
-    list-style: none;
+    /*Defique que todas as divs que conterem essa classe vão ter uma cor de fundo acinzentada e uma margem superior de 15px*/
+    margin-top: 15px;
+    background-color: rgb(207, 207, 207);
+}
+
+.li-principal
+{   
+    /*Todos que tiverem essa classe vão ter uma fonte mais grossa com margem 0 epadding 0*/
+    font-weight: bold;
+    margin: 0;
     padding: 0;
+}
+
+.carreira
+{   
+    /*Todos que tiverem uma a classe vão ter um padding superior de 5px, feito isso para que não fique tão grudado ao tituloa*/
+    padding-top: 5px;    
+}
+
+.carreira div
+{
+    /*Aplica as div que estiverem dentro de outra com a classe carreira uma margem superior de 10px e manda cada div para um lado*/
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.periodo-local
+{
+    /*Todos com essa classe terão uma fonte com a cor rgb(85, 85, 85) e deixa as datas sob o local*/
+    color:  rgb(85, 85, 85);
+    display: flex;
+    flex-direction: column;
+}
+
+.periodo-local h5
+{
+    /*todos os h5 dentro de uma div com periodo-local terão uma margem e padding de zero*/
+    margin: 0;
+    padding: 0;
+}
+
+.periodo-local h6
+{
+    /*Define todos os h6 dentro de uma div com a classe periodo-local como margem e padding zero e um alinhamento de texto a direita*/
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
 ul
 {
-    /*tirando o padding inicial que é dado pelo ul*/
-    padding: 0;
+    /*Todas as UL tem a margem zeradas e define a cor da fonte com rgb(85, 85, 85)*/
+    margin: 0;
+    color: rgb(85, 85, 85);
 }
 
-.listas
+hr
 {
-    /*as duas listas criadas são colocadas uma do lado da outra para melhor ocupar o espaço*/
+    /*HRs tem suas margens zeradas*/
+    margin: 0;
+}
+
+.formacao
+{
+    /*Recebe um padding superior e coloca as divs uma para cada lado*/
     display: flex;
-    align-content: center;
-    justify-content: center;
-    gap: 60px;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+.formacao div
+{
+    /*divs dentro de uma div com a classe formação recebem um padding superior de 10px*/
+    padding-top: 10px;
+}
+
+.formacao div h5
+{
+    /*h5s dentro das de uma div que esta dentro de uma div com classe formação recebe uma margem e um padding de 0 e alinha o texto a direita
+    e define a cor da fonte como rgb(85, 85, 85)*/
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    color: rgb(85, 85, 85);
+}
+
+.formacao div h6
+{
+    /*h5s dentro das de uma div que esta dentro de uma div com classe formação recebe uma margem e um padding de 0 e alinha o texto a direita
+    e define a cor da fonte como rgb(85, 85, 85) e um tamanho de 10.72px e um estilo de fonte italico*/
+    margin: 0;
+    padding: 0;
+    padding-top: 8px;
+    font-size: 10.72px;
+    color: rgb(85, 85, 85);
+    font-style: italic;
+}
+
+.atributos
+{
+    /*Essa classe envia todos os seus conteudos para os lados com um padding superior e inferior de 5px*/
+    display: flex;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.atributos div div
+{
+    /*uma div dentro de outra div que esta dentro de uma div com a classe atributos tem seus conteudos espacionados e tem o tamanho de 300px
+    de largura com um padding inferior e superior de 5px*/
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.atributos div div h5
+{
+    /* T-T tem a margem e padding zerado com sua fonte tendo o estilo italico com a cor color: rgb(85, 85, 85);*/
+    margin: 0;
+    padding: 0;
+    font-style: italic;
+    color: rgb(85, 85, 85);
+}
+
+
+.atributos div div h6
+{
+    /* T-T tem a margem e padding zerado com sua fonte tendo o tamanho de 12px com a cor color: rgb(85, 85, 85);*/
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    color: rgb(85, 85, 85);
+
 }

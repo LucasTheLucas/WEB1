@@ -3,115 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculo</title>
+    <title>Curriculo Lucas</title>
     <link rel="stylesheet" href="css.css">
 </head>
 <body>
-    <!--Cria um card com o nome candidato e é descrito suas caracteristicas no paragrafo-->
-    <div class="cardConteudo">
-        <div class="cardTitulo">
-            <h1>CANDIDATO</h1>
-        </div>
+    <!--Foto: eu conversei com o Angelo e ele disse que o precisava por uma foto, como não queria te chamar no sábado coloquei a foto-->
+    <img src="Lucas.png" alt="Lucas" width="150px" class="foto">
+    <!--Div simples inserindo meu dados para contato e nome-->
+    <div>
+        <h1>Lucas Novaes Dias</h1>
+        <h4>Email: lnovaesdias@gmail.com</h4>
+        <h4>Telefone: (46) 99932-9498</h4>
+    </div>
+
+    <!--hr para criar uma linha simples-->
+    <hr>
+
+    <!--Uma div simples com o CSS title para criar um fundo cinza, centralizando texto e fazendo uma sob linha-->
+    <div class="title">
+        <h3>PERFIL</h3>
+    </div>
+    <div>
+        <!--Paragrafo descrevendo um pouco sobre mim-->
         <p>
-            <Strong>Nome:</Strong> Lucas Novaes Dias <br>
-            <Strong>Data de nascimento:</Strong> 05/07/2004 <br>
-            <Strong>Email:</Strong> lnovaesdias@gmail.com <br>
-            <Strong>Telefone:</Strong> (46) 99932-9498
+            Estudante dedicado que iniciou na Unisep campus Dois Vizinhos - Paraná 
+            o curso de analise e desenvolvimento de sitemas e procuro desenvolver meus conhecimentos
+            para poder me destacar na área!
         </p>
     </div>
-    <!--Cria o card do perfil e adiciona o seu conteudo-->
-    <div class="cardConteudo">
-        <div class="cardTitulo">
-            <h1>PERFIL</h1>
-        </div>
-        <p>Estudante dedicado em estudar e aprender sobre a área de análise e desenvolvimento de sistemas! <br> Estou sempre disposto a enfrentar um novo desafio toda semana!</p>
+
+
+    <hr>
+
+    
+    <div class="title">
+        <h3>EXPERIÊNCIA PROFISSIONAL</h3>
     </div>
-    <!--Cria o card de experiencia e cria uma lista e dentro dessa lista é criado cada item dela com li-->
-    <div class="cardConteudo">
-        <div class="cardTitulo">
-            <h1>EXPERIENCIA PROFISSIONAL</h1>
-        </div>
-        <ul>
-            <li>
-                <Strong>Estoquista, Secretaria de saúde (02/2022 - 09/2024)</Strong>
-            </li>
-            <li>
-                Manter e organizar estoque suprimentos medicamentosos
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <Strong>TI, Unisep Dois Vizinhos (09/2024 - 01/2025)</Strong>
-            </li>
-            <li>
-                Organizar equipamentos e computadores para uso dos alunos
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <Strong>Analista de sistemas, Nootech Sistemas (02/2025 - Atualmente)</Strong>
-            </li>
-            <li>
-                Desenvolvimento em C# 
-            </li>
-            <li>Atendimento ao suporte</li>
-        </ul>
-    </div>
-    <!--Cria um card sobre a formação e cria um lista com seus itens-->
-    <div class="cardConteudo">
-        <div class="cardTitulo">
-            <h1>FORMAÇÃO</h1>
-        </div>
-        <ul>
-            <li>
-                <Strong>Colégio Estadual José da anchieta (02/2019 - 12/2021)</Strong>
-            </li>
-            <li>
-                Ensino médio
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <Strong>Sudotec (02/2023 - 10/2023)</Strong>
-            </li>
-            <li>
-                Curso preparatorio para desenvolvimento de sistemas
-            </li>
-        </ul>
-        <ul>
-            <li>
-                <Strong>Unisep (02/2024 - Atualmente)</Strong>
-            </li>
-            <li>
-                Analise e desenvolvimento de sistemas 
-            </li>
-        </ul>
-    </div>
-    <!--Cria mais duas listas cada uma em uma div para que possam ser postas uma lado a lado-->
-    <div class="cardConteudo">
-        <div class="cardTitulo">
-            <h1>COMPETÊNCIAS</h1>
-        </div>
-        <div class="listas">
+
+    <div>
+        <!--Criei uma serie de Divs para melhor organizar deixar mais facil de manipular
+        e depois repliquei a mesma para meus outros trabalhos
+        -->
+        <div class="carreira">
             <div>
-                <ul>
-                    <li><strong>Comunicação Interpessoal:</strong></li>
-                    <li>Péssimo</li>
-                    <li><strong>Exelente ética de trabalho:</strong></li>
-                    <li>Exelente</li>
-                    <li><strong>Competencias em tecnologia:</strong></li>
-                    <li>Bom</li>
-                </ul>
+                <div>
+                    <li class="li-principal">Estoquista, secretaria de saúde</li>
+                </div>
+                <div class="periodo-local">
+                    <h5>Mar 2022 - Set 2024</h5>
+                    <h6>Dois Vizinhos</h6>
+                </div>
+            </div>
+            <ul>
+                <li>Organização</li>
+                <li>Separar mercadorias</li>
+                <li>Conferir mercadorias</li>
+                <li>Dispensa de produtos</li>
+            </ul>
+        </div>
+    
+        <div class="carreira">
+            <div>
+                <div>
+                    <li class="li-principal">TI, Unisep campus Dois Vizinhos</li>
+                </div>
+                <div class="periodo-local">
+                    <h5>Set 2024 - Jan 2025</h5>
+                    <h6>Dois Vizinhos</h6>
+                </div>
+            </div>
+            <ul>
+                <li>Organização</li>
+                <li>Manutenção de hardware</li>
+            </ul>
+        </div>
+    
+        <div class="carreira">
+            <div>
+                <div>
+                    <li class="li-principal">Analista de sistemas, Nootech Sistemas</li>
+                </div>
+                <div class="periodo-local">
+                    <h5>Fev 2025 - Atualmente</h5>
+                    <h6>Dois Vizinhos</h6>
+                </div>
+            </div>
+            <ul>
+                <li>Analises do sistema</li>
+                <li>Suporte</li>
+                <li>Programação em C#</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h3>FORMAÇÃO</h3>
+    </div>
+
+    <div>
+        <!--Criei uma nova serie de divs para melhor organizar o código e replicalo
+        aqui fica organizado a minhas formaçoes em ordem sequencial
+        -->
+        <div class="formacao">
+            <div>
+                <li class="li-principal">Colégio estadual josé da anchieta</li>
+                <h6>Ensino médio</h6>
+            </div>
+    
+            <div>
+                <h5>Dez 2021</h5>
+                <H6>Dois Vizinhos</H6>
+            </div>
+        </div>
+
+        <div class="formacao">
+            <div>
+                <li class="li-principal">Sudotec</li>
+                <h6>Introdução a desenvolvimento web</h6>
+            </div>
+    
+            <div>
+                <h5>Out 2023</h5>
+                <H6>Dois Vizinhos</H6>
+            </div>
+        </div>
+
+        <div class="formacao">
+            <div>
+                <li class="li-principal">Unisep</li>
+                <h6>Analise e desenvolvimento de sistemas</h6>
+            </div>
+    
+            <div>
+                <h5>Jun 2026</h5>
+                <H6>Dois Vizinhos</H6>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="title">
+        <h3>COMPETÊNCIAS</h3>
+    </div>
+
+    <div class="atributos">
+        <!--Separei em uma serie de divs para melhor organização
+        aqui ficam separados minhas competencias
+        -->
+        <div>
+            <div>
+                <h6>Comunicação interpessoal</h6>
+                <h5>Péssimo</h5>
             </div>
             <div>
-                <ul>
-                    <li><strong>Trabalho em equipe:</strong></li>
-                    <li>Ok</li>
-                    <li><strong>Honestidade e integridade:</strong></li>
-                    <li>Exelente</li>
-                    <li><strong>Atitude motivada:</strong></li>
-                    <li>Ok</li>
-                </ul>
+                <h6>Excelente ética de trabalho</h6>
+                <h5>Especialista</h5>
+            </div>
+            <div>
+                <h6>Competências avançados em tecnologia</h6>
+                <h5>Decente</h5>
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <h6>Trabalho em equipe</h6>
+                <h5>Decente</h5>
+            </div>
+            <div>
+                <h6>Honestidade e integridade</h6>
+                <h5>Especialista</h5>
+            </div>
+            <div>
+                <h6>Atitude motivada</h6>
+                <h5>Decente</h5>
             </div>
         </div>
     </div>
